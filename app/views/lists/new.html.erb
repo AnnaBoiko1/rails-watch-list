@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Create new list</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+
+    <%= f.submit %>
+  <% end %>
+
+  <div class="parent--box">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list) do %>
+    <div class="list--card">
+      <h2><%= list.name %></h2>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+
+</div>

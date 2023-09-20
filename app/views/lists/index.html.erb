@@ -1,0 +1,19 @@
+<div class="banner">
+  <h1>Save any kind of movies</h1>
+</div>
+<div class="container">
+  <div class="custom-flex mt-3 mb-3">
+    <h3>My lists</h3>
+    <%= link_to "Create a movie list", new_list_path, class: "btn btn--green" %>
+  </div>
+
+  <div class="parent--box">
+    <% @lists.each do |list| %>
+      <%= link_to list_path(list) do %>
+    <div class="list--card">
+      <h2><%= list.name %></h2>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>
