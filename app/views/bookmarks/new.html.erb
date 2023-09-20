@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="markbook--form mt-3">
+    <%# <%= link_to "Add a movie", new_list_bookmark_path(@list), class: "btn btn--green" %>
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.association :movie, label: false, prompt: "Add a movie" %>
+      <%= f.input :comment, label: false, placeholder: "Add a comment" %>
+      <%= f.button :submit, "Add Movie to List" %>
+    <% end %>
+  </div>
+</div>

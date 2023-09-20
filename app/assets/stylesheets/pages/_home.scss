@@ -1,0 +1,48 @@
+// Specific CSS for your home-page
+.banner{
+  background-image: url("https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3125&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1, h3{
+    font-weight: bold;
+    text-shadow: 5px 5px 2px rgb(38, 2, 39);
+  }
+}
+
+.custom-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner--list{
+  background-color: rgb(38, 2, 39);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.banner--list h1 {
+  text-align: center;
+}
+
+.container h3{
+  margin-left: 50px;
+  font-weight: bold;
+}

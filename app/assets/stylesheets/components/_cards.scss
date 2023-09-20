@@ -1,0 +1,65 @@
+.list--card{
+  background-color: rgb(38, 2, 39);
+  width: 400px;
+  height: 200px;
+  box-shadow: 5px 5px 5px red;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  h2{
+    font-weight: bold;
+  }
+}
+
+.cards{
+  display: flex;
+}
+
+
+.movie--card{
+  width: 600px;
+  height: 350px;
+  box-shadow: 5px 5px 5px rgb(16, 14, 14);
+  h3{
+    font-weight: bold;
+  }
+
+  p{
+    margin: 7px;
+  }
+
+  img{
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+  object-position: top;
+  }
+  h4{
+    justify-content: space-between;
+  }
+}
+.flex{
+  display: flex;
+}
+
+.gray{
+  color: rgb(156, 156, 156);
+}
+.i{
+  width: 50px;
+}
+
+.grid-movies{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.last-options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
